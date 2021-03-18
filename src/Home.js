@@ -17,7 +17,7 @@ const Home = () => {
 
     useEffect(() => {
         console.log(blogs);
-    }, [name])
+    }, [name]) //This stuff in the array is the dependencies the useEffect is going to consider
 
     return (
         <div className="home">            
