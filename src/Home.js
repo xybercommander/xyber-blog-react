@@ -1,25 +1,19 @@
 import { useState } from 'react';
 
 const Home = () => {
-
-    const [name, setName] = useState('Xyber');
-    const handleClick = () => {
-        setName('Samrat')
-    }
-
-    const [counter, setCounter] = useState(0);
-    const counterIncrement = () => {
-        setCounter(counter + 1);
-    }
-
-    
+    const [blogs, setBlogs] = useState([
+        { title: 'My React Project', body: 'Lorem Ipsum Dolor...', author: 'Xyber', id: 1 },
+        { title: 'They see me bloggin', body: 'Lorem Ipsum Dolor...', author: 'Samrat', id: 2 },
+        { title: 'Web dev tips', body: 'Lorem Ipsum Dolor...', author: 'Xyber', id: 3 },
+    ])
     return (        
         <div className="home">
-            <h2>Homepage</h2>            
-            <p>{ name }</p>            
-            <button onClick={ handleClick }>Click Me</button>            
-            <h3>CLicked { counter } times</h3>
-            <button onClick={ counterIncrement }>Press</button>
+            { blogs.map((blog) => (
+                <div className="blog-preview" key={blog.id}>
+                    <h2>{ blog.title }</h2>
+                    <p>Written By { blog.author }</p>
+                </div>
+            )) }
         </div>
     );
 }
