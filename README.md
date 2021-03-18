@@ -8,4 +8,5 @@
   <li> Checkpoint 6 has the implementation of the db.json which is used in the json-server. Command for running the json server is : <br><code>$npx json-server --watch data/db.json --port 8000</code><br> The directory of the db.json is <code>data/db.json</code> and the server is hosted on <code>localhost:8000</code></li>
   <li> Checkpoint 7 has the implementation of <code>fetch()</code> from the db.json hosted as the json server on port 8000</li>
   <li> Checkpoint 8 has the implementation of isPending or the Loading screen that shows before <code>fetch()</code> completes</li>
+  <li> Checkpoint 9 has the implementation of handling error messages. A new useState variable <code>const [error, setError] = useState(null)</code> is made for showing the messages</li>
 </ol>
