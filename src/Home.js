@@ -11,23 +11,16 @@ const Home = () => {
     const handleDelete = (id) => {
         const newBlogs = blogs.filter(blog => blog.id !== id);
         setBlogs(newBlogs);
-    }
-
-    const [name, setName] = useState('Samrat');
+    }    
 
     useEffect(() => {
         console.log(blogs);
-    }, [name]) //This stuff in the array is the dependencies the useEffect is going to consider
+    }, []) //This stuff in the array is the dependencies the useEffect is going to consider
 
-    return (
+    // Main component
+    return ( 
         <div className="home">            
-            <BlogList 
-                blogs={blogs} 
-                title={'All Blogs!'}
-                handleDelete={handleDelete}
-            /> {/* All the blogs */}           
-            <button onClick={() => setName(name === 'Xyber' ? 'Samrat':'Xyber')}>Change Name</button>
-            <p>{ name }</p>
+            <BlogList blogs={blogs} title={'All Blogs!'} handleDelete={handleDelete} /> {/* All the blogs */}            
         </div>
     );
 }
