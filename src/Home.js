@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BlogList from './BlogList';
 
 const Home = () => {
@@ -13,17 +13,21 @@ const Home = () => {
         setBlogs(newBlogs);
     }
 
-    return (        
+    const [name, setName] = useState('Samrat');
+
+    useEffect(() => {
+        console.log(blogs);
+    }, [name])
+
+    return (
         <div className="home">            
             <BlogList 
                 blogs={blogs} 
                 title={'All Blogs!'}
                 handleDelete={handleDelete}
-            /> {/* All the blogs */}            
-            <BlogList 
-                blogs={blogs.filter((blog) => blog.author === 'Xyber')} 
-                title={'Xyber\'s Blogs!'}
-            /> {/* Using filter mehtod to only output the blogs with author as 'Xyber' */}
+            /> {/* All the blogs */}           
+            <button onClick={() => setName(name === 'Xyber' ? 'Samrat':'Xyber')}>Change Name</button>
+            <p>{ name }</p>
         </div>
     );
 }
