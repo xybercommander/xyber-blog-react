@@ -10,4 +10,5 @@
     <code>$npx json-server --watch data/db.json --port 8000</code><br>
     The directory for the db is <code>data/db.json</code> and the server is hosted on <code>localhost:8000<code>
   </li>
+  <li> Checkpoint 7 has the implementation of <code>fetch()</code> from the db.json hosted as the json server on port 8000</li>
 </ol>
