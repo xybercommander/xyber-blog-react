@@ -10,4 +10,5 @@
   <li> Checkpoint 8 has the implementation of isPending or the Loading screen that shows before <code>fetch()</code> completes</li>
   <li> Checkpoint 9 has the implementation of handling error messages. A new useState variable <br><code>const [error, setError] = useState(null)</code><br> is made for showing the messages</li>
   <li> Checkpoint 10 has the implementation of of a custom hook which calls the fetch method. The hook is : <br><code>const { data, isPending, error } = useFetch(<url>);</code></li>
+  <li> Checkpoint 11 has the implementation of React Router, Route, Switch and Link Components. </li>
 </ol>
