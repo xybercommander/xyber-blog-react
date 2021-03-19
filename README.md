@@ -9,4 +9,5 @@
   <li> Checkpoint 7 has the implementation of <code>fetch()</code> from the db.json hosted as the json server on port 8000</li>
   <li> Checkpoint 8 has the implementation of isPending or the Loading screen that shows before <code>fetch()</code> completes</li>
   <li> Checkpoint 9 has the implementation of handling error messages. A new useState variable <br><code>const [error, setError] = useState(null)</code><br> is made for showing the messages</li>
+  <li> Checkpoint 10 has the implementation of of a custom hook which calls the fetch method. The hook is : <br><code>const { data, isPending, error } = useFetch(<url>); </code> completes</li>
 </ol>
