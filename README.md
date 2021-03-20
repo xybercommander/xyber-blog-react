@@ -14,7 +14,8 @@
   <li> Checkpoint 12 has the implementation of <code>AbortController()</code> inside the <code>useFetch</code> hook which helps to abort the fetch method if the use routes to another page while the fetch() method is still fetching the data </li>
   <li> Checkpoint 13 has the implementation <code>useParams()</code> to fetch the id from the parameters and reusage of <code>useFetch()</code> to call the data for individual blogs </li>
   <li> Checkpoint 14 has the implementation of HTML forms with dynamic value using the useState Hook </li>
-  <li> Checkpoint 15 has the implementations of Submit Events and POST Requests to add the new blogs to the json </li>
-  <li> Checkpoint 16 has the implementations of <code>useHistory</code> hook which helps to programmatically redirect to different routes</li>
-  <li> Checkpoint 17 has the implementations of DELETE Requests which helps to delete the blogs </li>
+  <li> Checkpoint 15 has the implementation of Submit Events and POST Requests to add the new blogs to the json </li>
+  <li> Checkpoint 16 has the implementation of <code>useHistory</code> hook which helps to programmatically redirect to different routes</li>
+  <li> Checkpoint 17 has the implementation of DELETE Requests which helps to delete the blogs </li>
+  <li> Checkpoint 18 has the implementation of <code>NotFound.js</code> which is basically the 404 error page </li>
 </ol>
