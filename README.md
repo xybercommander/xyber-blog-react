@@ -15,4 +15,5 @@
   <li> Checkpoint 13 has the implementation <code>useParams()</code> to fetch the id from the parameters and reusage of <code>useFetch()</code> to call the data for individual blogs </li>
   <li> Checkpoint 14 has the implementation of HTML forms with dynamic value using the useState Hook </li>
   <li> Checkpoint 15 has the implementations of Submit Events and POST Requests to add the new blogs to the json </li>
+  <li> Checkpoint 16 has the implementations of <code>useHistory</code> hook which helps to programmatically redirect to different routes</li>
 </ol>
