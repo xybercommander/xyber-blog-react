@@ -13,4 +13,5 @@
   <li> Checkpoint 11 has the implementation of React Router, Route, Switch and Link Components. </li>
   <li> Checkpoint 12 has the implementation of <code>AbortController()</code> inside the <code>useFetch</code> hook which helps to abort the fetch method if the use routes to another page while the fetch() method is still fetching the data </li>
   <li> Checkpoint 13 has the implementation <code>useParams()</code> to fetch the id from the parameters and reusage of <code>useFetch()</code> to call the data for individual blogs </li>
+  <li> Checkpoint 14 has the implementation of HTML forms with dynamic value using the useState Hook </li>
 </ol>
